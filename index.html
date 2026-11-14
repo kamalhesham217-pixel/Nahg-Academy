@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>أكاديمية نهج لعلوم القرآن</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Amiri:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- أيقونات SVG قابلة لإعادة الاستخدام -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <symbol id="lantern" viewBox="0 0 60 140">
+        <line x1="30" y1="0" x2="30" y2="18" stroke="#c9a24a" stroke-width="2"/>
+        <circle cx="30" cy="20" r="4" fill="#e6c36a"/>
+        <path d="M30 24 L48 44 H12 Z" fill="#d9ad4f"/>
+        <rect x="14" y="44" width="32" height="6" fill="#c9a24a"/>
+        <path d="M14 50 H46 L50 100 Q30 112 10 100 Z" fill="#ffd978" opacity=".9"/>
+        <path d="M14 50 H46 L50 100 Q30 112 10 100 Z" fill="none" stroke="#c9a24a" stroke-width="3"/>
+        <path d="M30 56 V104 M22 54 L20 104 M38 54 L40 104" stroke="#c9a24a" stroke-width="1.5"/>
+        <path d="M12 102 Q30 118 48 102 L40 120 H20 Z" fill="#c9a24a"/>
+        <circle cx="30" cy="128" r="5" fill="#e6c36a"/>
+      </symbol>
+
+      <symbol id="mosque" viewBox="0 0 400 100">
+        <g fill="currentColor">
+          <rect x="30" y="30" width="8" height="70"/><path d="M28 30 L34 12 L40 30Z"/>
+          <rect x="362" y="30" width="8" height="70"/><path d="M360 30 L366 12 L372 30Z"/>
+          <rect x="90" y="60" width="220" height="40"/>
+          <path d="M150 60 Q200 -5 250 60Z"/>
+          <rect x="198" y="2" width="4" height="12"/>
+          <path d="M95 60 Q120 28 145 60Z"/>
+          <path d="M255 60 Q280 28 305 60Z"/>
+          <rect x="0" y="92" width="400" height="8"/>
+        </g>
+      </symbol>
+
+      <symbol id="chevron" viewBox="0 0 24 24">
+        <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <main class="phone">
+
+    <!-- ===== الهيدر ===== -->
+    <header class="hero">
+      <svg class="lantern left"><use href="#lantern"/></svg>
+      <svg class="lantern right"><use href="#lantern"/></svg>
+
+      <div class="arch">
+        <div class="crescent">☾</div>
+        <svg class="book" viewBox="0 0 120 60" aria-hidden="true">
+          <path d="M60 14 C42 4 22 6 6 12 V54 C22 48 42 48 60 56 C78 48 98 48 114 54 V12 C98 6 78 4 60 14Z"
+                fill="#f3d27a" stroke="#c9a24a" stroke-width="3"/>
+          <path d="M60 14 V56" stroke="#c9a24a" stroke-width="3"/>
+        </svg>
+        <h1>أكاديمية نهج</h1>
+        <h2>لعلوم القرآن</h2>
+      </div>
+
+      <div class="ribbon">رحلة علوم وإيمان وإتقان</div>
+
+      <svg class="mosque-bg"><use href="#mosque"/></svg>
+    </header>
+
+    <!-- ===== المحتوى ===== -->
+    <section class="content">
+      <h3 class="welcome">مرحباً بك في أكاديميّة نهج</h3>
+      <p class="tagline">معاً نحو حفظ القرآن وفهمه والعمل به</p>
+
+      <div class="divider"><span></span><i></i><span></span></div>
+
+      <nav class="buttons">
+
+        <button class="btn light" data-action="guest">
+          <svg class="arrow"><use href="#chevron"/></svg>
+          <div class="txt"><strong>متابعة كضيف</strong><small>استكشف الأكاديمية ومحتواها المجاني</small></div>
+          <svg class="icon" viewBox="0 0 64 64">
+            <path d="M4 32C14 16 26 10 32 10s18 6 28 22C50 48 38 54 32 54S14 48 4 32Z" fill="none" stroke="#1d3b36" stroke-width="4"/>
+            <circle cx="32" cy="32" r="11" fill="none" stroke="#1d3b36" stroke-width="4"/>
+            <circle cx="32" cy="32" r="5" fill="#1d3b36"/>
+          </svg>
+        </button>
+
+        <button class="btn dark" data-action="login">
+          <svg class="arrow"><use href="#chevron"/></svg>
+          <div class="txt"><strong>تسجيل الدخول</strong><small>لديك حساب بالفعل؟</small></div>
+          <svg class="icon" viewBox="0 0 64 64">
+            <path d="M26 12H50a4 4 0 0 1 4 4V48a4 4 0 0 1-4 4H26" fill="none" stroke="#e6c36a" stroke-width="4" stroke-linecap="round"/>
+            <path d="M6 32H34M26 22l10 10-10 10" fill="none" stroke="#e6c36a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <button class="btn light" data-action="register">
+          <svg class="arrow"><use href="#chevron"/></svg>
+          <div class="txt"><strong>إنشاء حساب جديد</strong><small>انضم إلى أسرة أكاديمية نهج</small></div>
+          <svg class="icon" viewBox="0 0 64 64">
+            <circle cx="26" cy="20" r="11" fill="#1d5a50"/>
+            <path d="M4 56c0-13 9-21 22-21s22 8 22 21Z" fill="#1d5a50"/>
+            <path d="M52 16v18M43 25h18" stroke="#1d3b36" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <button class="btn dark" data-action="teacher">
+          <svg class="arrow"><use href="#chevron"/></svg>
+          <div class="txt"><strong>طلب الانضمام كمحفظ</strong><small>انضم إلى فريق التعليم والتحفيظ</small></div>
+          <svg class="icon" viewBox="0 0 64 64">
+            <circle cx="32" cy="14" r="8" fill="#e6c36a"/>
+            <path d="M18 34c0-8 6-12 14-12s14 4 14 12Z" fill="#e6c36a"/>
+            <path d="M6 38c10-3 20-1 26 5 6-6 16-8 26-5v18c-10-3-20-1-26 5-6-6-16-8-26-5Z" fill="#e6c36a" stroke="#c9a24a" stroke-width="2"/>
+            <path d="M32 43v18" stroke="#1d3b36" stroke-width="3"/>
+          </svg>
+        </button>
+
+      </nav>
+    </section>
+
+    <!-- ===== الفوتر ===== -->
+    <footer class="footer">
+      <svg class="mosque-foot"><use href="#mosque"/></svg>
+      <p><i></i>معاً .. لنصنع جيلاً حافظاً لكتاب الله<i></i></p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
