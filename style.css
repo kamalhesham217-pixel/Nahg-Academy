@@ -1,17 +1,50 @@
-const routes = {
-  guest:    "#",
-  login:    "login.html",
-  register: "register.html",
-  teacher:  "#",
-};
+:root {
+  --green-dark: #0f3a34;
+  --green-mid: #1d5a50;
+  --gold: #c9a24a;
+  --gold-light: #f0d48a;
+  --cream: #fbf3e2;
+  --text: #1d3b36;
+}
 
-document.querySelectorAll(".btn").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const url = routes[btn.dataset.action];
-    if (url === "#") {
-      alert("الصفحة دي لسه تحت الإنشاء");
-      return;
-    }
-    window.location.href = url;
-  });
-});
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: "Cairo", sans-serif;
+  background: #dfe9ee;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.phone {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  background: linear-gradient(#fdf6e6, #f6e8c9);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0,0,0,.2);
+}
+
+/* ===== الهيدر ===== */
+.hero {
+  position: relative;
+  padding: 40px 18px 70px;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.8) 0 8%, transparent 9%),
+    radial-gradient(circle at 85% 30%, rgba(255,255,255,.7) 0 7%, transparent 8%),
+    linear-gradient(#7fb4d8 0%, #bfdcea 55%, #fbf3e2 100%);
+  text-align: center;
+}
+
+.lantern { position: absolute; top: 14px; width: 54px; height: 125px; filter: drop-shadow(0 0 14px rgba(255,200,90,.9)); z-index: 3; }
+.lantern.left  { left: 10px; }
+.lantern.right { right: 10px; }
+
+.arch {
+  position: relative;
+  z-index: 2;
+  margin: 18px auto 0;
+  width: 82%;
